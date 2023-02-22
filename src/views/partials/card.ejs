@@ -1,0 +1,9 @@
+<article class="product-box_data">
+    <h2><%- toThousand(product.price - (product.price * product.discount / 100) ) %></h2>
+    <% if (product.discount > 0) { %>
+     <span>%<%- product.discount %></span>
+    <% } %>
+    
+    <p><%- product.name %></p>
+    <i class="fas fa-truck"></i>
+</article>
